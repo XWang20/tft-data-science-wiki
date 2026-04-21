@@ -125,18 +125,22 @@ The ranking is **identical to raw AVP**. And mathematically it has to be: `Edge 
 
 Dishsoap's approach: look at complete 3-item builds to see what people actually craft together.
 
-Top 15 Vex builds in Nova 95:
+Top Vex builds in Nova 95 (sorted by AVP):
 
 ```
 Build                                              Games   AVP
-Guinsoo + Gunblade + Giant Slayer                  18,675  3.89
-Guinsoo + Giant Slayer + JG                         9,866  4.03
-Guinsoo + Giant Slayer + Flail                      8,136  3.77
-Guinsoo + Gunblade + JG                             5,633  3.95
-Guinsoo + Gunblade + Flail                          5,462  3.68
-Guinsoo + Giant Slayer + Dcap                       4,259  3.70
-Guinsoo + Giant Slayer + Guinsoo                    3,723  3.65
 Guinsoo + Gunblade + Dcap                           2,619  3.54
+Guinsoo + Giant Slayer + Guinsoo                    3,723  3.65
+Guinsoo + Guinsoo + Gunblade                        3,027  3.66
+Guinsoo + Gunblade + Flail                          5,462  3.68
+Guinsoo + JG + Flail                                3,819  3.68
+Guinsoo + Giant Slayer + Dcap                       4,259  3.70
+Guinsoo + Giant Slayer + Flail                      8,136  3.77
+Guinsoo + AA + Gunblade                             3,089  3.77
+Guinsoo + AA + Giant Slayer                         3,677  3.85
+Guinsoo + Gunblade + Giant Slayer                  18,675  3.89
+Guinsoo + Gunblade + JG                             5,633  3.95
+Guinsoo + Giant Slayer + JG                         9,866  4.03
 ```
 
 **Guinsoo appears in every single top build.** It's not just statistically important (Necessity) — it's the literal first item everyone builds.
