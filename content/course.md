@@ -42,10 +42,17 @@ Module: N (or "Exploratory")
 
 ## The Question
 ## Chapter 1-N: (story-driven, data first)
-## Cross-Validation (vs tftable)
+## Cross-Validation (vs tftable) ← MANDATORY for every experiment
 ## What I Learned
 ## Open Questions → feed into next experiments
 ```
+
+### Cross-Validation Protocol
+Every experiment MUST include a cross-validation step:
+1. Query tftable for the same data point
+2. Compare our result with tftable's (tftable = baseline / ground truth)
+3. If they agree → confidence++
+4. If they disagree → investigate why, document the discrepancy
 
 ### Experiment Sources
 - **Module exercises**: directly practice the current topic
