@@ -34,14 +34,18 @@ Red Buff looks like the best item on Vex. But something's off — only 15k games
 
 ---
 
-## Chapter 2: The Control Variable Experiment
+## Chapter 2: Can We Isolate an Item's Real Contribution?
+
+If raw single-item AVP is contaminated, what if we **hold other variables constant** — like a science experiment?
 
 Dishsoap's advice ([[sources/dishsoap-frodan-stats]]): "Look at item combos and full builds — that knocks out a lot of the bias."
 
-So we fixed two items and varied the third. If Guinsoo + Giant Slayer is the base, what's the best third item?
+The idea: if we compare complete three-item builds, everyone in the comparison has a fully-itemized Vex. No one got Red Buff from a late carousel while already winning — they all have three items. That removes a big chunk of survivorship bias.
+
+But there's a problem: with 57 different builds above 200 games, we can't compare them all at once. So we borrowed from experimental design — **fix two items, vary one.** Same base, different treatment. If Guinsoo + Giant Slayer is the base:
 
 ```
-Fixed: Guinsoo + Giant Slayer + ???
+Guinsoo + Giant Slayer + ???
 Red Buff          2,408 games   AVP 3.48
 2× Guinsoo        3,577         AVP 3.67
 Dcap              4,026         AVP 3.69
@@ -50,9 +54,11 @@ Gunblade         17,815         AVP 3.89
 JG                9,423         AVP 4.04
 ```
 
-Red Buff still #1. But is this real, or is it the same bias at a different level? 2,408 games is much less than Gunblade's 17,815.
+Red Buff still #1. But is it real? Two concerns:
+1. Only 2,408 games — could be noise
+2. We're only looking at **one** base pair — what if Red Buff is only good with Guinsoo + Giant Slayer specifically?
 
-We repeated this across 8 different base pairs (Guinsoo+Gunblade, Guinsoo+JG, Guinsoo+Flail, etc.) and checked: **does the same item rank consistently?**
+To answer this, we need to check: **does the ranking hold across different base pairs?**
 
 ---
 
