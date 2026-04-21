@@ -5,11 +5,15 @@
 
 TFT stats analysis operates on three independent axes. Each can be set independently. Best results come from maximizing all three.
 
-### Dimension 1: Metric Selection (What to measure)
+### Dimension 1: Filter Strategy (What games to include) — FOUNDATION
 
-Progression: AVP → Edge → Necessity
+TFT match data is high-dimensional panel data. Viewing aggregate statistics without proper conditioning produces Simpson's Paradox — conclusions reverse when you stratify.
 
-Each step corrects one more bias. See [[metrics]] for details.
+Filter = conditioning = controlling for confounders.
+
+**Without correct conditioning, no metric can produce correct conclusions.**
+
+See [[filter-strategy]].
 
 ### Dimension 2: Data Granularity (What to compare)
 
@@ -23,25 +27,21 @@ Each step corrects one more bias. See [[metrics]] for details.
 
 Higher granularity = less carousel bias. See [[build-analysis]].
 
-### Dimension 3: Filter Strategy (What games to include) — FOUNDATION
+### Dimension 3: Metric Selection (What to measure)
 
-TFT match data is high-dimensional panel data. Viewing aggregate statistics without proper conditioning produces Simpson's Paradox — conclusions reverse when you stratify.
+Progression: AVP → Edge → Necessity
 
-Filter = conditioning = controlling for confounders.
-
-**Without correct conditioning, no metric can produce correct conclusions.**
-
-See [[filter-strategy]].
+Each step corrects one more bias. See [[metrics]] for details.
 
 ### Combining Dimensions
 
 Best practice = all three maxed:
 ```
-Necessity (Dim 1) + Build Analysis (Dim 2) + Precise Filter (Dim 3)
+Precise Filter (Dim 1) + Build Analysis (Dim 2) + Necessity (Dim 3)
 ```
 
 But any improvement on any dimension helps. Don't let perfect be the enemy of good.
 
 ## Sources
 - Xing + Mochi framework (2026-04-21)
-- Informed by all [[ref-morbrid-reddit|references]]
+- Informed by all [[sources/morbrid-reddit-post|references]]
