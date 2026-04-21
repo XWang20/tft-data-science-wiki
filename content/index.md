@@ -53,6 +53,8 @@
 |---|---|---|
 | [[experiments/vex-nova95]] | 2026-04-21 | 5 metrics compared; Necessity + Builds converge; Red Buff/Dcap best marginal |
 | [[experiments/reflections-2026-04-21]] | 2026-04-21 | What I learned: don't bring conclusions to data, shrinkage ≠ debiasing |
+| [[experiments/vex-cross-comp-items]] | 2026-04-21 | Vex BIS changes across comps; filter = foundation validated |
+| [[experiments/cross-validation-vex-nova95]] | 2026-04-21 | Blocked on tftable API; pending |
 
 ## People
 

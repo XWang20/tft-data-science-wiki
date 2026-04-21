@@ -22,6 +22,36 @@ In econometrics terms: you can't run an OLS regression without controlling for c
 □ Consider region: KR/NA/VN have different metas
 ```
 
+## Filter Sources
+
+### Option 1: Use tftable compositions.py (Expert-Curated)
+tftable maintains `compositions.py` with human-expert-written filter definitions for all meta comps. These use OR groups, trait requirements, and unit exclusions. Available at the tft_data GitHub repo. This is the gold standard.
+
+### Option 2: Build Filters Yourself
+Tips from Dishsoap and Aesah:
+
+**Dishsoap’s approach** ([[sources/dishsoap-frodan-stats]]):
+- Start with the comp identity (trait + key carry), not the unit
+- "Don’t search Zoe items. Search 7 Rebel Zoe items or 6 Sorc Zoe items."
+- Use MetaTFT Explorer: add units one by one, check Units tab for frequency + delta
+- Use Traits tab: search trait names, compare breakpoints
+- Filter by rank (GM+) and region (KR/NA) for granular reads
+- Augment proxy trick: search for item patterns that imply augments (e.g., 4× Rageblade = Anger Issues)
+
+**Aesah’s approach** ([[sources/aesah-data-mistakes]]):
+- Add comp context (e.g., 3+ Prodigy, 5 Battle Academia) to narrow down
+- Use “or more” for traits to capture more variants and increase sample size
+- Exclude secondary carries (e.g., exclude Katarina 3) to see primary carry’s true items
+- Don’t add too many filters — 92 games = noise
+
+**morbrid’s approach** ([[sources/morbrid-aesah-talk]]):
+- Games tab sanity check after every filter change
+- Click suspicious outliers → add to filter → look at games → exclude if garbage
+- Exclude Golden Ox, cash out games
+- Don’t specify star level (introduces selection bias)
+- Use bookmarks to A/B compare two filter sets
+- “Exclude → Toggle On” to measure category importance (anti-heal, shred)
+
 ## Techniques
 
 ### Add Context First (Dishsoap)
