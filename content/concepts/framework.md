@@ -29,7 +29,7 @@ Higher granularity = less carousel bias. See [[build-analysis]].
 
 ### Dimension 3: Metric Selection (What to measure)
 
-Progression: AVP → Edge → Necessity
+Progression: AVP → Delta → Necessity
 
 Each step corrects one more bias. See [[metrics]] for details.
 
