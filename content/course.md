@@ -48,11 +48,13 @@ Module: N (or "Exploratory")
 ```
 
 ### Cross-Validation Protocol
-Every experiment MUST include a cross-validation step:
-1. Query tftable for the same data point
-2. Compare our result with tftable's (tftable = baseline / ground truth)
+Every experiment SHOULD include cross-validation when tftable API is available:
+1. Query tftable for the same data point (tftable = baseline / ground truth)
+2. Compare our result with tftable's
 3. If they agree → confidence++
-4. If they disagree → investigate why, document the discrepancy
+4. If they disagree → investigate why
+
+**Note**: tftable API not yet available for programmatic access. Xing will provide API later. For now, qualitative comparison only.
 
 ### Experiment Sources
 - **Module exercises**: directly practice the current topic
