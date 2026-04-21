@@ -1,146 +1,151 @@
-# Vex Items in Nova 95 — Experiment Report
-
-## Experiment 1: Single Item AVP (Baseline — Known Biased)
-
-```
-Item                      Games    AVP    95%CI           99%Upper
-Guinsoo's Rageblade      175,826  4.05   [4.04, 4.06]     4.06
-Giant Slayer              72,779  3.99   [3.97, 4.00]     4.01
-Hextech Gunblade          56,575  3.94   [3.92, 3.96]     3.96
-Jeweled Gauntlet          44,833  4.12   [4.09, 4.14]     4.14
-Striker's Flail           32,391  3.78   [3.75, 3.81]     3.81
-Archangel's Staff         20,078  3.95   [3.91, 3.98]     3.99
-Rabadon's Deathcap        19,021  3.74   [3.70, 3.77]     3.78
-Red Buff                  15,171  3.66   [3.63, 3.70]     3.71
-```
-
-⚠️ **This is BIASED** — survivorship bias makes low-freq items look better.
+# Experiment: Vex Items in Nova 95
+**Status**: 🧪 In Progress
+**Date**: 2026-04-21
+**Authors**: Xing + Mochi
 
 ---
 
-## Experiment 3: Control Variable — Fix 2 Items, Vary 3rd
+## The Question
 
-### Fixed: Guinsoo + Giant Slayer + ???  (61,419 games)
-```
-3rd Item          Games    AVP    95% CI
-Red Buff          2,408   3.48   [3.39, 3.58]
-2x Guinsoo        3,577   3.67   [3.60, 3.75]
-Dcap              4,026   3.69   [3.62, 3.76]
-Morellos           1,384   3.72   [3.59, 3.84]
-Flail             7,896   3.78   [3.73, 3.83]
-Archangel's       3,516   3.86   [3.78, 3.93]
-Gunblade         17,815   3.89   [3.85, 3.92]
-JG                9,423   4.04   [3.99, 4.09]
-Void Staff        4,076   4.11   [4.04, 4.18]
-```
+What are Vex's best items in the Nova 95 composition?
 
-### Fixed: Guinsoo + Gunblade + ???  (47,026 games)
-```
-Red Buff          1,878   3.46   [3.35, 3.57]
-Dcap              2,524   3.55   [3.46, 3.64]
-2x Guinsoo        2,876   3.64   [3.55, 3.73]
-Flail             5,233   3.68   [3.62, 3.75]
-AA                2,965   3.80   [3.71, 3.88]
-GSlayer          17,815   3.89   [3.85, 3.92]
-JG                5,426   3.94   [3.87, 4.00]
-Void Staff        3,294   4.19   [4.11, 4.28]
-```
-
-### Fixed: Guinsoo + Dcap + ???  (13,597 games)
-```
-Red Buff            627   3.21   [3.03, 3.40]
-2x Guinsoo          778   3.35   [3.19, 3.51]
-Flail             1,524   3.52   [3.40, 3.63]
-Gunblade          2,524   3.55   [3.46, 3.64]
-JG                1,636   3.67   [3.56, 3.78]
-GSlayer           4,026   3.69   [3.62, 3.76]
-Void Staff        1,030   3.91   [3.77, 4.05]
-```
-
-### Fixed: Guinsoo + Flail + ???  (26,263 games)
-```
-Red Buff          1,512   3.44   [3.32, 3.56]
-Dcap              1,524   3.52   [3.40, 3.63]
-2x Guinsoo        1,766   3.60   [3.49, 3.70]
-JG                3,682   3.68   [3.60, 3.75]
-Gunblade          5,233   3.68   [3.62, 3.75]
-AA                1,325   3.74   [3.61, 3.87]
-GSlayer           7,896   3.78   [3.73, 3.83]
-```
+This sounds simple. It isn't. The journey to answer it taught us more about **how to think about TFT stats** than about Vex's actual BIS.
 
 ---
 
-## Experiment 4: Worst-Case Ranking (99% CI Upper Bound)
+## Chapter 1: The Naive Approach
 
-Top 15 builds sorted by pessimistic estimate:
+We started where everyone starts — pull Vex's item data from MetaTFT, sort by AVP.
+
 ```
-Build                                         Games    AVP   99%Upper
-Guinsoo + Dcap + RFC                            626   3.23     3.48
-2x Guinsoo + Dcap                               778   3.35     3.56
-AA + Guinsoo + RFC                              612   3.36     3.59
-Guinsoo + Gunblade + RFC                      1,879   3.46     3.60
-Guinsoo + Flail + RFC                         1,511   3.45     3.60
-Guinsoo + GSlayer + RFC                       2,407   3.48     3.60
-Guinsoo + Gunblade + Dcap                     2,522   3.55     3.66
-Guinsoo + Flail + Dcap                        1,521   3.52     3.67
-2x Guinsoo + Flail                            1,768   3.60     3.74
-2x Guinsoo + Gunblade                         2,876   3.64     3.75
-Guinsoo + Gunblade + Flail                    5,231   3.69     3.77
-Guinsoo + Flail + JG                          3,685   3.68     3.77
-2x Guinsoo + GSlayer                          3,575   3.67     3.77
-Guinsoo + GSlayer + Dcap                      4,023   3.69     3.78
+Guinsoo's Rageblade    175,826 games   AVP 4.05
+Giant Slayer            72,779         AVP 3.99
+Hextech Gunblade        56,575         AVP 3.94
+Striker's Flail         32,391         AVP 3.78
+Rabadon's Deathcap      19,021         AVP 3.74
+Red Buff                15,171         AVP 3.67  ← "best"?
 ```
+
+Red Buff looks like the best item on Vex. But something's off — only 15k games vs Guinsoo's 175k. Why is the least-built item the "best"?
+
+**Enter survivorship bias.** We'd just read morbrid's Reddit post ([[sources/morbrid-reddit-post]]) explaining that low play rate items get inflated AVP because they're often picked up from late-game carousels — and you only reach late game if you're already winning.
+
+**Lesson 1: Raw AVP is useless for cross-item comparison.** ❌
 
 ---
 
-## Experiment 5: Consistency — Same Item Across Different Base Pairs
+## Chapter 2: The Control Variable Experiment
+
+Dishsoap's advice ([[sources/dishsoap-frodan-stats]]): "Look at item combos and full builds — that knocks out a lot of the bias."
+
+So we fixed two items and varied the third. If Guinsoo + Giant Slayer is the base, what's the best third item?
 
 ```
-Item            #Pairs  AvgRank%   Best  Worst  Verdict
-Red Buff           7     10.9%     6%    25%    ✅ Consistently strong
-Dcap               8     17.4%    12%    22%    ✅ Consistently strong
-Morellos            6     35.0%    28%    56%    ⚠️ Above average
-Flail              9     38.5%    11%    60%    ⚠️ Above average
-2x Guinsoo        16     44.1%    11%    88%    ⚠️ Above avg (volatile)
-AA                 9     48.6%    17%    80%    ⚠️ Above avg (volatile)
-Gunblade           9     63.7%    50%    89%    — Average
-Giant Slayer      11     65.2%    33%    90%    — Average
-JG                 9     83.3%    60%   100%    ❌ Consistently weak
-Void Staff         8     95.1%    83%   100%    ❌ Consistently weak
+Fixed: Guinsoo + Giant Slayer + ???
+Red Buff          2,408 games   AVP 3.48
+2× Guinsoo        3,577         AVP 3.67
+Dcap              4,026         AVP 3.69
+Flail             7,896         AVP 3.78
+Gunblade         17,815         AVP 3.89
+JG                9,423         AVP 4.04
 ```
+
+Red Buff still #1. But is this real, or is it the same bias at a different level? 2,408 games is much less than Gunblade's 17,815.
+
+We repeated this across 8 different base pairs (Guinsoo+Gunblade, Guinsoo+JG, Guinsoo+Flail, etc.) and checked: **does the same item rank consistently?**
 
 ---
 
-## Key Findings
+## Chapter 3: The Consistency Check
 
-### 1. Red Buff + Dcap are the real winners
-- **Red Buff**: Ranks #1 in EVERY base pair (avg rank 10.9%). CI upper bounds are narrow.
-- **Dcap**: Ranks top 2 almost everywhere (avg rank 17.4%).
-- Both have lower sample counts but their consistency across 7-8 different pair contexts is very compelling.
+This became our most convincing experiment. For each item, we asked: across all the base pairs where it appears, what's its average rank percentile?
 
-### 2. The "popular" items are actually mediocre
-- **Gunblade** (56k games as single item): Looks decent at 3.94 AVP, but in control variable tests it's *average* (rank 63.7%). The most popular build (Guinsoo+Gunblade+GSlayer at 17.8k games) is 3.89 — worse than several alternatives.
-- **Giant Slayer** (72k games): Similar story — ranks 65.2%, average.
+```
+Item          #Pairs  Avg Rank%  Verdict
+Red Buff         7     10.9%     ✅ #1 in every pair
+Dcap             8     17.4%     ✅ Top 2 almost everywhere
+Flail            9     38.5%     ⚠️ Above average
+Gunblade         9     63.7%     — Average
+Giant Slayer    11     65.2%     — Average
+JG               9     83.3%     ❌ Consistently weak
+Void Staff       8     95.1%     ❌ Consistently last
+```
 
-### 3. JG and Void Staff are traps
-- Both look okay in single-item analysis (JG 4.12, Void Staff 4.27) but their CI includes selection effects.
-- In control variable, they consistently rank *last* or near-last (JG 83.3%, Void Staff 95.1%).
+Red Buff is #1 in **every single** base pair. That's hard to explain with bias alone. Dcap is similarly consistent.
 
-### 4. RFC is quietly the best sub-component
-- Builds with RFC dominate the "worst-case" ranking (top 6 of 15).
-- But RFC has very low sample counts — needs monitoring.
-
-### 5. Biases still present
-- **Red Buff**: Could still benefit from late-game survivorship (it's a cheap item, maybe completed late from spare components?)
-- **RFC builds**: Low sample — CI wide, could be noise
-- **Player behavior**: Popular items get "diluted" by forced builds
+But wait — survivorship bias can still exist within builds. A build with Red Buff might still be more likely to appear on late-game boards.
 
 ---
 
-## Recommended Methodology for Future Analyses
+## Chapter 4: The Aesah Method (Play Rate Weighting)
 
-1. **Never compare single-item AVP directly** — always use control variable or full build analysis
-2. **Experiment 5 (consistency check) is the most reliable** — if an item ranks well across 5+ different pair contexts, it's likely genuinely strong
-3. **Use 99% CI upper bound** to filter noise from small samples
-4. **Check for RFC-like patterns**: small sample + great AVP needs extra scrutiny
-5. **Cross-reference with game theory**: does the item's mechanics explain why it's good? (e.g., Red Buff anti-heal + burn makes sense on a DoT mage like Vex)
+Then we learned from Aesah ([[sources/aesah-data-mistakes]]) a much simpler approach: **weight by play rate**.
+
+```
+no_item_AVP = (overall - p × item_AVP) / (1 - p)
+Necessity = no_item_AVP - overall
+```
+
+After fixing a bug where we calculated overall_AVP from items (double-counting!) instead of from the unit directly, we got:
+
+```
+Item              Rate   AVP   Edge  Necessity
+Guinsoo           88%   4.05  +0.06  +0.443   ← Most important by far
+Giant Slayer      36%   3.98  +0.13  +0.072
+Gunblade          28%   3.94  +0.17  +0.069
+Flail             16%   3.78  +0.33  +0.063
+Dcap              10%   3.74  +0.37  +0.039
+Red Buff           7%   3.67  +0.44  +0.036
+```
+
+This tells a completely different story. **Guinsoo is the most important item** (Necessity +0.443) — without it, Vex's AVP drops from 4.05 to ~4.55, nearly half a placement. Red Buff? Necessity only +0.036.
+
+---
+
+## Chapter 5: What We Learned
+
+### The methods disagree — and that's informative
+
+| Method | Winner | What it measures |
+|---|---|---|
+| Raw AVP | Red Buff (3.67) | Contaminated by survivorship bias |
+| Control Variable | Red Buff (consistent #1) | Best item **given you already have 2 good items** |
+| Necessity | Guinsoo (+0.443) | Most important item for the comp to function |
+
+These aren't contradictory. They answer different questions:
+- **Necessity** answers: "What's the most critical item?" → Guinsoo (core identity)
+- **Consistency check** answers: "What's the best marginal item?" → Red Buff / Dcap (best 3rd item)
+- **Raw AVP** answers: nothing useful ❌
+
+### Open problems
+
+1. **Survivorship bias in builds**: Even the control variable method may be contaminated. A three-item build with Red Buff might disproportionately appear on late-game boards. We don't have a way to control for game stage.
+
+2. **Edge vs Necessity**: We proposed Edge (`overall - w/`) as a "fairer" version of Delta. But its practical advantage over standard Delta is unproven. Need more experiments across different comps.
+
+3. **Missing dimension — filter quality**: We filtered for nova_95 but didn't check the Games tab (morbrid's advice). Are there Golden Ox games? Cash out games? Are some of these Vex-as-secondary-carry games?
+
+4. **Sample size for builds**: Many three-item builds have only 200-2000 games. The CI is wide. Are the consistency check results robust to CI?
+
+5. **The Frequency-AVP regression**: morbrid's graph view method could directly model the survivorship bias curve. We haven't tried it yet.
+
+---
+
+## Next Steps
+
+- [ ] Add Frequency-AVP regression analysis
+- [ ] Games tab sanity check on the nova_95 filter
+- [ ] Repeat on 2-3 other comps to validate methodology
+- [ ] Compare Edge vs Delta empirically across comps
+- [ ] Add CI to consistency check results
+
+---
+
+## Sources
+- [[sources/morbrid-reddit-post]] — Survivorship bias awareness
+- [[sources/aesah-data-mistakes]] — Play rate weighted formula
+- [[sources/dishsoap-frodan-stats]] — "Look at builds, not single items"
+- [[sources/morbrid-aesah-talk]] — Games tab, graph view
+- [[concepts/metrics]] — Edge, Necessity definitions
+- [[concepts/biases]] — Three bias types
+- [[concepts/framework]] — Three dimension framework
