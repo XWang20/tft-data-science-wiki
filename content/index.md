@@ -3,7 +3,7 @@
 > Personal knowledge base for TFT statistical analysis.
 > Pattern: [Karpathy's LLM Wiki](https://x.com/karpathy/status/2039805659525644595)
 >
-> **Layer 1** — Raw sources (immutable): `raw/`
+> **Layer 1** — Raw sources (immutable): `sources/*.txt` + `sources/reference-*.md`
 > **Layer 2** — Wiki (LLM-maintained): `concepts/`, `methods/`, `tools/`, `experiments/`, `people/`
 > **Layer 3** — Schema: `schema.md`
 >
