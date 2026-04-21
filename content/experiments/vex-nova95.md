@@ -153,6 +153,8 @@ Morellonomicon        9,047     4%   3.89  -0.225  +0.010  +0.22
 
 Every metric tells a different story. AVP/Edge say Red Buff. Delta says Guinsoo (but for the wrong reason — inflated by terrible w/o group). Necessity says Guinsoo (for a defensible reason — play rate weighting).
 
+![[vex-nova95-metric-landscape.png]]
+
 ---
 
 ## What We Learned
