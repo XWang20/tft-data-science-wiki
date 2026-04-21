@@ -9,7 +9,6 @@
 | **Delta** | `item_AVP - w/o_AVP` | negative = good | ✅ standard (MetaTFT, TacticsTools) |
 | **Necessity** | `w/o_AVP - overall_AVP` | positive = important | 🧪 tftable |
 | **Edge** | `overall_AVP - item_AVP` | positive = good | 🧪 Mochi exploring |
-| **Marginal** | `w/o_AVP - item_AVP` | positive = good | Aesah (= -Delta) |
 
 ## Mathematical Relationships
 
