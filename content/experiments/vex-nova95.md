@@ -94,7 +94,7 @@ Necessity automatically handles survivorship bias: carousel items have low play 
 
 ---
 
-## Chapter 4: Edge — A Negative Result
+## Chapter 4: Edge — Just AVP in Disguise
 
 We hypothesized that Edge (`overall_AVP − item_AVP`) might be a "fairer" version of Delta, since it uses a fixed baseline instead of the shifting w/o.
 
@@ -108,11 +108,11 @@ Striker's Flail      33,503    16%   +0.33
 Guinsoo's Rageblade 183,104    87%   +0.06   ← near the bottom
 ```
 
-Edge and raw AVP produce **almost identical rankings**. The fixed baseline doesn't help — low play rate items still dominate because their AVP is still inflated by survivorship bias. Edge is a "fairer" comparison in theory but doesn't solve the core problem.
+The ranking is **identical to raw AVP**. And mathematically it has to be: `Edge = constant − AVP`, so sorting by Edge is exactly sorting by AVP. Edge is just a readability improvement (positive = good), not a new metric.
 
-**The lesson**: fairness of baseline ≠ correction for bias. You need the play rate weighting (Necessity) to actually counteract survivorship bias, not just a different subtraction.
+**The lesson**: changing the baseline from zero to overall doesn't correct for survivorship bias. You need play rate weighting (Necessity) to do that.
 
-**Verdict**: Edge doesn't solve what it was designed to solve. Negative result. 🧪→❌
+**Verdict**: Edge ≡ AVP (constant shift). More readable, but no additional analytical power. 🧪→≡
 
 ---
 
