@@ -185,7 +185,45 @@ Giant Slayer is top 5 only in Necessity (high play rate), not in other metrics. 
 
 ---
 
-## Supplementary: Control Variable & Consistency Check
+## Supplementary: Frequency-AVP Regression
+
+Inspired by morbrid's graph view: fit a regression line on play rate vs AVP, then look at residuals. Items below the line perform better than their play rate would predict.
+
+```
+AVP = 3.937 + 0.010 × ln(rate%)
+R² = 0.004 (almost no linear relationship in filtered data)
+```
+
+```
+Item                  Rate   Residual   Verdict
+Red Buff               7%    -0.287     Better than expected
+Radabon's Deathcap    10%    -0.219     Better than expected
+Striker's Flail       16%    -0.174     Better than expected
+Morellonomicon         4%    -0.062     Slightly better
+Hextech Gunblade      28%    -0.030     As expected
+Giant Slayer          36%    +0.017     As expected
+Guinsoo's Rageblade   87%    +0.069     Slightly worse than expected
+Jeweled Gauntlet      22%    +0.152     Worse than expected
+Void Staff            11%    +0.299     Much worse than expected
+```
+
+![[vex-nova95-freq-avp.png]]
+
+R² is near zero — meaning in this filtered dataset, the frequency-AVP correlation that dominates global stats is largely absent. The Nova 95 filter may already be controlling for most of the survivorship bias that creates that correlation globally.
+
+The residual ranking is another perspective:
+
+| Rank | By Residual |
+|---|---|
+| 1 | Red Buff (-0.287) |
+| 2 | Rabadon's Deathcap (-0.219) |
+| 3 | Striker's Flail (-0.174) |
+| 4 | Morellonomicon (-0.062) |
+| 5 | Hextech Gunblade (-0.030) |
+
+This largely agrees with AVP/Edge rankings (since R² ≈ 0, residuals ≈ centered AVP). The regression doesn't add much new information here — possibly because the filter already removed most of the bias that the regression was meant to correct.
+
+---
 
 We also explored the question "what's the best third item?" by fixing two items and varying the third across 8 base pairs. Red Buff and Dcap consistently ranked #1-2. This answers a different question (marginal item selection) and provides complementary evidence.
 
