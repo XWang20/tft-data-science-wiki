@@ -7,7 +7,7 @@
 
 ## The Question
 
-What are Vex's best items in the Nova 95 composition?
+What are Vex's top 5 items in the Nova 95 composition?
 
 We tried four different metrics. Each told a different story. The real question became: **which metric should we trust?**
 
@@ -157,10 +157,19 @@ Every metric tells a different story. AVP/Edge say Red Buff. Delta says Guinsoo 
 
 ## What We Learned
 
-### About Vex's items
-- **Guinsoo is the core identity item** — confirmed by Necessity (#1) and build analysis (in every build)
-- **Giant Slayer, Gunblade, Flail** are the key secondary items — all have Necessity around +0.06-0.07
-- **Red Buff and Dcap appear in the best builds** but have low play rate — their strength may be real, but the data can't definitively prove it due to sample size and survivorship bias
+### Vex's top 5 items in Nova 95
+
+| Rank | By Necessity | By Delta | By AVP/Edge | By Build Frequency |
+|---|---|---|---|---|
+| 1 | Guinsoo's Rageblade | Guinsoo's Rageblade | Red Buff | Guinsoo's Rageblade |
+| 2 | Giant Slayer | Red Buff | Rabadon's Deathcap | Striker's Flail |
+| 3 | Hextech Gunblade | Rabadon's Deathcap | Striker's Flail | Rabadon's Deathcap |
+| 4 | Striker's Flail | Striker's Flail | Morellonomicon | Red Buff |
+| 5 | Rabadon's Deathcap | Hextech Gunblade | Hextech Gunblade | Hextech Gunblade |
+
+**Consensus top 5** (appear in most metrics' top 5): **Guinsoo, Flail, Dcap, Gunblade, Red Buff**
+
+Giant Slayer is top 5 only in Necessity (high play rate), not in other metrics. It might be overbuilt.
 
 ### About metrics
 - **AVP and Edge rank identically** — Edge = constant − AVP, no additional information
