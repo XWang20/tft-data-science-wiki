@@ -20,7 +20,6 @@ w/o_AVP = (A - p×a) / (1-p)
 Edge       = A - a
 Necessity  = p/(1-p) × Edge
 Delta      = -Edge / (1-p)
-Marginal   = Edge / (1-p) = -Delta
 ```
 
 Key insight: **Necessity = Edge × p/(1-p)**
