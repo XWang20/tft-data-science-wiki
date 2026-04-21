@@ -3,9 +3,9 @@
 > Personal knowledge base for TFT statistical analysis.
 > Pattern: [Karpathy's LLM Wiki](https://x.com/karpathy/status/2039805659525644595)
 >
-> **Layer 1** — Raw sources (immutable): `comp-retrieval/reference-*.md`
-> **Layer 2** — Wiki (LLM-maintained): this directory
-> **Layer 3** — Schema: AGENTS.md § data science rules
+> **Layer 1** — Raw sources (immutable): `raw/`
+> **Layer 2** — Wiki (LLM-maintained): `concepts/`, `methods/`, `tools/`, `experiments/`, `people/`
+> **Layer 3** — Schema: `schema.md`
 >
 > The wiki is a persistent, compounding artifact. Knowledge is compiled once and kept current, not re-derived on every query.
 
