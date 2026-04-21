@@ -63,6 +63,7 @@
 ## Maintenance
 
 - **Log**: [[log]] — parseable chronological record
+- **Course**: [[course]] — syllabus, progress, experiment queue
 - **Last lint**: not yet performed
 - **Last updated**: 2026-04-21
 - **Contributors**: Xing, Mochi
