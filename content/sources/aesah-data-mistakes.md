@@ -17,5 +17,5 @@
 - Giant Slayer uses sword+bow (bad AP components) vs Rabadon uses rod+rod (good) — item economy matters beyond pure DPS
 
 ## Wiki Pages Updated
-- [[metrics]] — Edge, Necessity, Marginal definitions
-- [[biases]] — survivorship bias mechanism via carousel
+- [[concepts/metrics]] — Edge, Necessity, Marginal definitions
+- [[concepts/biases]] — survivorship bias mechanism via carousel

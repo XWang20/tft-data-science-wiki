@@ -51,7 +51,8 @@
 
 | Page | Date | Summary |
 |---|---|---|
-| [[experiments/vex-nova95]] | 2026-04-21 | 5 methods compared; consistency check most reliable; Red Buff + Dcap consistently strong |
+| [[experiments/vex-nova95]] | 2026-04-21 | 5 metrics compared; Necessity + Builds converge; Red Buff/Dcap best marginal |
+| [[experiments/reflections-2026-04-21]] | 2026-04-21 | What I learned: don't bring conclusions to data, shrinkage ≠ debiasing |
 
 ## People
 

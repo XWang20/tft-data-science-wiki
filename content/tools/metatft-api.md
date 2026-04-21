@@ -23,7 +23,7 @@ permit_filter_adjustment=true
 | `units_unique` | Per-unit AVP, games | Unit performance, overall AVP baseline |
 | `items_unique` | Global item frequency | Item meta overview |
 | `unit_items_unique/{unit}` | Items on specific unit | **Item analysis (our main tool)** |
-| `unit_builds` | 3-item build combos per unit | [[build-analysis]] |
+| `unit_builds` | 3-item build combos per unit | [[methods/build-analysis]] |
 | `traits` | Trait activation frequency/AVP | Trait breakpoint analysis |
 | `rank` | By-rank distribution | Rank-specific analysis |
 | `server` | By-server distribution | Region-specific meta |

@@ -20,7 +20,7 @@
 - Patch early → trust individuals. Patch late → trust data. (morbrid + Aesah)
 
 ## Wiki Pages Updated
-- [[filter-strategy]] — exclude→toggle, games tab, bookmarks, star level warning
-- [[biases]] — frequency-AVP relationship
-- [[framework]] — graph view as Level 5
-- [[metrics]] — tier list algorithm context
+- [[methods/filter-strategy]] — exclude→toggle, games tab, bookmarks, star level warning
+- [[concepts/biases]] — frequency-AVP relationship
+- [[concepts/framework]] — graph view as Level 5
+- [[concepts/metrics]] — tier list algorithm context

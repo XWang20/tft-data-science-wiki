@@ -44,8 +44,8 @@ JG          83.3% → ❌ Consistently weak
 Void Staff  95.1% → ❌ Consistently weak
 ```
 
-See [[exp-vex-nova95]] for full details.
+See [[experiments/vex-nova95]] for full details.
 
 ## Sources
-- [[ref-dishsoap-stats]]: "Look at item combos and full builds"
+- [[sources/dishsoap-frodan-stats]]: "Look at item combos and full builds"
 - Mochi experiments (2026-04-21): Control variable + consistency check

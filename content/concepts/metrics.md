@@ -37,12 +37,12 @@ Key insight: **Necessity = Edge × p/(1-p)**
 
 ## Pitfalls
 
-- **Raw AVP** is almost useless for cross-item comparison due to [[biases]]
+- **Raw AVP** is almost useless for cross-item comparison due to [[concepts/biases]]
 - **Delta (w/ - w/o)** is unfair: w/o shifts with play rate, not a fixed baseline
   - High play rate → w/o is very bad (only losers don't have it) → Delta inflated
   - Low play rate → w/o ≈ overall → Delta ≈ Edge
 - **Edge is untested** — we believe it's cleaner than Delta but need more validation
 
 ## Sources
-- [[ref-aesah-data-mistakes]]: Original play rate weighted formula
+- [[sources/aesah-data-mistakes]]: Original play rate weighted formula
 - Xing + Mochi derivation (2026-04-21): Edge concept and mathematical relationships

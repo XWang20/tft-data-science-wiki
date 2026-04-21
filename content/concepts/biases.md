@@ -19,9 +19,9 @@ Items from late-game carousels appear on endgame boards of players who survived 
 
 **Mitigations**:
 - Use [[metrics|Necessity]] instead of raw AVP (play rate weighting)
-- Use [[build-analysis]] instead of single-item analysis
-- Use [[filter-strategy]] to exclude secondary carry games
-- Use [[frequency-avp-graph]] to visually identify the bias curve
+- Use [[methods/build-analysis]] instead of single-item analysis
+- Use [[methods/filter-strategy]] to exclude secondary carry games
+- Use [[experiments/vex-nova95#supplementary-frequency-avp-regression]] to visually identify the bias curve
 
 ## 2. Player Behavior Bias
 
@@ -51,7 +51,7 @@ Basic statistics: fewer observations → higher variance → more outliers.
 - Don't overfilter: each filter reduces sample size
 
 ## Sources
-- [[ref-morbrid-reddit]]: Comprehensive writeup on all three biases
-- [[ref-morbrid-aesah-talk]]: "CI doesn't fix survivorship bias"
-- [[ref-dishsoap-stats]]: Sample size rules of thumb
-- [[ref-aesah-data-mistakes]]: Play rate as the key corrector
+- [[sources/morbrid-reddit-post]]: Comprehensive writeup on all three biases
+- [[sources/morbrid-aesah-talk]]: "CI doesn't fix survivorship bias"
+- [[sources/dishsoap-frodan-stats]]: Sample size rules of thumb
+- [[sources/aesah-data-mistakes]]: Play rate as the key corrector

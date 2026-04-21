@@ -14,6 +14,6 @@
 - Place Change/Delta has error stacking when comparing "with vs without"
 
 ## Wiki Pages Updated
-- [[biases]] — all three bias types
-- [[metrics]] — CI context
-- [[build-analysis]] — motivation for builds over single items
+- [[concepts/biases]] — all three bias types
+- [[concepts/metrics]] — CI context
+- [[methods/build-analysis]] — motivation for builds over single items

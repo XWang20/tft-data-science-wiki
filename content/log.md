@@ -1,46 +1,20 @@
-# TFT Data Science Wiki — Change Log
 
-Append-only chronological record. Parseable with: `grep "^## \[" log.md | tail -5`
 
----
+## [2026-04-21] update | Wiki references fixed
+- Fixed all broken wikilinks (short refs → full path refs with folder prefix)
+- All `[[biases]]` → `[[concepts/biases]]`, `[[filter-strategy]]` → `[[methods/filter-strategy]]`, etc.
 
-## [2026-04-21] init | Wiki created
-- Architecture: Karpathy LLM Wiki pattern (3 layers)
-- Folders: concepts/, methods/, tools/, sources/, experiments/, people/
-- Contributors: Xing, Mochi
+## [2026-04-21] experiment | Vex Nova 95 — full rewrite
+- Rewrote report: 5 chapters (Raw AVP, Delta, Necessity, Edge, Builds) + 2 supplementary
+- Added Frequency-AVP regression (R² ≈ 0, regression not useful in filtered data)
+- Added Bayesian Shrinkage comparison (doesn't change rankings — bias not variance)
+- Added metric landscape chart (contour lines for all metrics)
+- Key finding: Necessity and Build Analysis converge; Edge ≡ AVP
+- Question changed from "best item" to "top 5 items"
 
-## [2026-04-21] ingest | morbrid Reddit Post
-- Source: Reddit post on sample size, CI, biases
-- Pages created: sources/morbrid-reddit-post
-- Pages updated: concepts/biases, concepts/metrics
-
-## [2026-04-21] ingest | Aesah "Avoid These Data Mistakes"
-- Source: YouTube video transcript
-- Pages created: sources/aesah-data-mistakes
-- Pages updated: concepts/metrics (Edge, Necessity derivation)
-
-## [2026-04-21] ingest | morbrid + Aesah Live Session
-- Source: YouTube live session transcript
-- Pages created: sources/morbrid-aesah-talk
-- Pages updated: concepts/biases, methods/filter-strategy (exclude→toggle, graph view)
-
-## [2026-04-21] ingest | Dishsoap + Frodan "How to Climb with Stats"
-- Source: YouTube video transcript (TFT Study Hall)
-- Pages created: sources/dishsoap-frodan-stats
-- Pages updated: methods/filter-strategy, methods/build-analysis
-
-## [2026-04-21] experiment | Vex Items in Nova 95
-- 5 analysis methods compared on same dataset
-- Result: consistency check (cross-pair ranking) most reliable
-- Pages created: experiments/vex-nova95 (pending migration)
-- Pages updated: methods/build-analysis
-
-## [2026-04-21] concept | Edge metric proposed
-- Formula: overall_AVP - item_AVP (fair baseline, no w/o dependency)
-- Status: 🧪 exploring — needs cross-validation on more comps
-- Pages updated: concepts/metrics
-
-## [2026-04-21] tool | metatft_query.py updated
-- Added Edge + Necessity columns to items output
-- Fixed overall_AVP bug (was using items weighted avg, now uses units_unique)
-- Pages updated: tools/metatft-api
+## [2026-04-21] reflection | Day 1 learnings
+- Don't bring conclusions to data (confirmation bias)
+- Edge ≡ AVP is algebraically trivial — should have seen from math
+- Shrinkage doesn't fix systematic bias
+- Different metrics answer different questions
+- Wiki as learning journal + textbook

@@ -13,7 +13,7 @@ Filter = conditioning = controlling for confounders.
 
 **Without correct conditioning, no metric can produce correct conclusions.**
 
-See [[filter-strategy]].
+See [[methods/filter-strategy]].
 
 ### Dimension 2: Data Granularity (What to compare)
 
@@ -25,7 +25,7 @@ See [[filter-strategy]].
 | Control variable | fix 2, vary 1 | isolates single item contribution |
 | Consistency check | cross-pair ranking | validates robustness |
 
-Higher granularity = less carousel bias. See [[build-analysis]].
+Higher granularity = less carousel bias. See [[methods/build-analysis]].
 
 ### Dimension 3: Metric Selection (What to measure)
 

@@ -59,6 +59,6 @@ Every filter reduces sample size. Three filters might be enough. Seven filters m
 | Star level (don't specify) | morbrid: specifying stars introduces bias |
 
 ## Sources
-- [[ref-dishsoap-stats]]: "Add context first", don't just put the unit in
-- [[ref-morbrid-aesah-talk]]: Games tab, exclude→toggle, don't overfilter
-- [[ref-aesah-data-mistakes]]: Filter to see primary carry items
+- [[sources/dishsoap-frodan-stats]]: "Add context first", don't just put the unit in
+- [[sources/morbrid-aesah-talk]]: Games tab, exclude→toggle, don't overfilter
+- [[sources/aesah-data-mistakes]]: Filter to see primary carry items

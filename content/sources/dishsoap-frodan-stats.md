@@ -19,7 +19,7 @@
 - **Traits tab for breakpoints**: search trait names, compare 4 vs 6 vs 8 delta to decide breakpoints
 
 ## Wiki Pages Updated
-- [[filter-strategy]] — context first, region filtering, augment proxy trick
-- [[build-analysis]] — two-item combos
-- [[biases]] — carousel as constant bias, sample size rules
-- [[framework]] — practical workflow
+- [[methods/filter-strategy]] — context first, region filtering, augment proxy trick
+- [[methods/build-analysis]] — two-item combos
+- [[concepts/biases]] — carousel as constant bias, sample size rules
+- [[concepts/framework]] — practical workflow
