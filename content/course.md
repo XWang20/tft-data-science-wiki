@@ -70,7 +70,7 @@ Every experiment SHOULD include cross-validation when tftable API is available:
 | Module | Status | Key Experiments | Key Learnings |
 |---|---|---|---|
 | 0 | ✅ | API exploration (2026-04-21) | 9 endpoints discovered, filter format documented |
-| 1 | 🧪 | — | Filter is foundation; same unit different comp = different BIS |
+| 1 | ✅ | vex-cross-comp-items (2026-04-21) | Filter is foundation; same unit different comp = different BIS; Giant Slayer flips sign between NOVA and Dark Star |
 | 2 | ✅ | vex-nova95 (2026-04-21) | Necessity best single metric; Edge ≡ AVP; shrinkage doesn't fix bias |
 | 3 | 🧪 | vex-nova95 supplementary | Control variable + consistency check validated |
 | 4-9 | ⬜ | — | — |
@@ -79,8 +79,8 @@ Every experiment SHOULD include cross-validation when tftable API is available:
 
 ## Experiment Queue
 
-### Tomorrow's 3 experiments:
-1. **Module 1 preview**: Take Vex and analyze her items in TWO different comps (Nova 95 vs another comp that uses Vex). Do the BIS items change? How much does filter choice matter?
+### Next experiments:
+1. ~~**Module 1 preview**: Vex items in two different comps~~ → ✅ `vex-cross-comp-items` (2026-04-21)
 2. **Module 3 follow-up**: In Nova 95, do the top builds by AVP actually suffer from survivorship bias? Compare build AVP ranking with build Necessity ranking.
 3. **Cross-validation**: Query tftable for Nova 95 Vex items. Compare tftable's necessity scores with our calculated Necessity. Do they match?
 
