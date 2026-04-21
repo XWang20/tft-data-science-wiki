@@ -1,15 +1,15 @@
 # Metrics
-**Status**: ✅ verified (Necessity) / 🧪 exploring (Edge)
+**Status**: ✅ standard (AVP, Delta) / 🧪 tftable (Necessity) / 🧪 Mochi (Edge)
 
 ## Definitions
 
 | Metric | Formula | Sign Convention | Source |
 |---|---|---|---|
-| **AVP** | raw average placement | lower = better | standard |
-| **Edge** | `overall_AVP - item_AVP` | positive = good | ours (internal) |
-| **Necessity** | `w/o_AVP - overall_AVP` | positive = important | tftable |
-| **Delta** (MetaTFT) | `item_AVP - w/o_AVP` | negative = good | MetaTFT |
-| **Marginal** | `w/o_AVP - item_AVP` | positive = good | Aesah |
+| **AVP** | raw average placement | lower = better | ✅ standard |
+| **Delta** | `item_AVP - w/o_AVP` | negative = good | ✅ standard (MetaTFT, TacticsTools) |
+| **Necessity** | `w/o_AVP - overall_AVP` | positive = important | 🧪 tftable (Xing) |
+| **Edge** | `overall_AVP - item_AVP` | positive = good | 🧪 Mochi exploring |
+| **Marginal** | `w/o_AVP - item_AVP` | positive = good | Aesah (= -Delta) |
 
 ## Mathematical Relationships
 
