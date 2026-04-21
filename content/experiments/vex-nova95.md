@@ -21,15 +21,18 @@ Sort Vex's items by AVP. Lower = better.
 
 ```
 Item                  Games    Rate   AVP
-Searing Shortbow      1,150     1%   2.87  ← ???
-The Annihilator         551     0%   3.62
 Red Buff             15,671     7%   3.67
 Rabadon's Deathcap   19,895     9%   3.74
 Striker's Flail      33,503    16%   3.78
+Morellonomicon        9,034     4%   3.89
+Archangel's Staff    20,777    10%   3.94
+Hextech Gunblade     59,056    28%   3.94
+Giant Slayer         76,041    36%   3.98
+Nashor's Tooth        8,412     4%   4.00
 Guinsoo's Rageblade 183,104    87%   4.05  ← way down here
 ```
 
-Searing Shortbow is "the best item on Vex" with a 2.87 average placement. Clearly nonsense — it's a 1% play rate artifact from late-game carousels or anomaly rewards. Meanwhile Guinsoo, which 87% of Vex players build, barely beats the overall average.
+Red Buff looks like the best craftable item on Vex with 3.67 AVP. But it has only 7% play rate while Guinsoo, which 87% of Vex players build, barely beats the overall average.
 
 The pattern is obvious: **play rate and AVP are inversely correlated.** Rare items always look good because they appear on endgame boards of players who were already winning. This is survivorship bias, and it contaminates every single item in every single set (morbrid: "constant bias").
 
@@ -43,17 +46,17 @@ Delta = `w/ item AVP − w/o item AVP`. Negative = good. This is what MetaTFT an
 
 ```
 Item                  Games    Rate   Delta
-Searing Shortbow      1,150     1%   -1.25  ← still fake
-The Annihilator         551     0%   -0.49
-Guinsoo's Rageblade 183,104    87%   -0.48  ← finally appears!
+Guinsoo's Rageblade 183,104    87%   -0.48  ← #1!
 Red Buff             15,671     7%   -0.47
 Rabadon's Deathcap   19,895     9%   -0.41
 Striker's Flail      33,503    16%   -0.39
 Hextech Gunblade     59,056    28%   -0.23
+Morellonomicon        9,034     4%   -0.23
 Giant Slayer         76,041    36%   -0.19
+Archangel's Staff    20,777    10%   -0.18
 ```
 
-Progress! Guinsoo now ranks 3rd with Delta -0.48. Delta is better than raw AVP because it compares "with" vs "without" rather than just looking at the absolute number.
+Progress! Guinsoo now ranks #1 with Delta -0.48. Delta is better than raw AVP because it compares "with" vs "without" rather than just looking at the absolute number.
 
 But there's a subtle problem. Delta uses `w/o` as its baseline — and w/o is **not a fixed reference point**. For Guinsoo (87% play rate), the "without" group is just the 13% of Vex players who didn't build Guinsoo — probably because they couldn't, which means they were in trouble. For Searing Shortbow (1% play rate), the "without" group is 99% of all Vex players ≈ the overall average. The baseline shifts depending on play rate, making cross-item comparison unfair.
 
@@ -81,7 +84,7 @@ Striker's Flail      33,503    16%   +0.062
 Rabadon's Deathcap   19,895     9%   +0.039
 Red Buff             15,671     7%   +0.035
 Archangel's Staff    20,777    10%   +0.019
-Searing Shortbow      1,150     1%   +0.007   ← correctly suppressed
+Morellonomicon        9,034     4%   +0.010
 ```
 
 The story changes completely.
@@ -100,11 +103,13 @@ We hypothesized that Edge (`overall_AVP − item_AVP`) might be a "fairer" versi
 
 ```
 Item                  Games    Rate   Edge
-Searing Shortbow      1,150     1%   +1.24   ← still #1
-The Annihilator         551     0%   +0.49
 Red Buff             15,671     7%   +0.44
 Rabadon's Deathcap   19,895     9%   +0.37
 Striker's Flail      33,503    16%   +0.33
+Morellonomicon        9,034     4%   +0.22
+Hextech Gunblade     59,056    28%   +0.17
+Archangel's Staff    20,777    10%   +0.17
+Giant Slayer         76,041    36%   +0.13
 Guinsoo's Rageblade 183,104    87%   +0.06   ← near the bottom
 ```
 
