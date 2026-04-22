@@ -56,6 +56,7 @@
 | [[experiments/vex-cross-comp-items]] | 2026-04-21 | Vex BIS changes across comps; filter = foundation validated |
 | [[experiments/cross-validation-vex-nova95]] | 2026-04-21 | Blocked on tftable API; pending |
 | [[experiments/nova-trait-breakpoint]] | 2026-04-22 | N.O.V.A. breakpoints; used AVP (wrong!); needs redo with Necessity |
+| [[experiments/nova95-unit-necessity]] | 2026-04-22 | Unit Necessity ranking for Nova 95; Blitz most core; Rammus/TahmKench are traps (variant markers) |
 | [[experiments/reflections-2026-04-22]] | 2026-04-22 | Xing feedback: don't regress to AVP; control variables within comps; checklist ≠ textbook |
 
 ## People
@@ -71,4 +72,4 @@
 - **Last lint**: not yet performed
 - **Last updated**: 2026-04-22
 - **Contributors**: Xing, Mochi
-- **Page count**: 7 concept/method + 4 source + 5 experiment + 1 checklist + 1 course = 18 pages
+- **Page count**: 7 concept/method + 4 source + 6 experiment + 1 checklist + 1 course = 19 pages

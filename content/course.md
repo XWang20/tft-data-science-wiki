@@ -73,7 +73,7 @@ Every experiment SHOULD include cross-validation when tftable API is available:
 | 1 | ✅ | vex-cross-comp-items (2026-04-21) | Filter is foundation; same unit different comp = different BIS; Giant Slayer flips sign between NOVA and Dark Star |
 | 2 | ✅ | vex-nova95 (2026-04-21) | Necessity best single metric; Edge ≡ AVP; shrinkage doesn't fix bias |
 | 3 | 🧪 | vex-nova95 supplementary | Control variable + consistency check validated |
-| 4 | ⬜ | — | — |
+| 4 | 🧪 | nova95-unit-necessity (2026-04-22) | Blitz #1 necessity; Rammus/TK are variant markers not bad units; support shell > secondary carry |
 | 5 | 🧪 | nova-trait-breakpoint (2026-04-22) | REDO needed: used AVP (Xing feedback); universal improvement = bias; need Necessity + within-comp control |
 
 ---
