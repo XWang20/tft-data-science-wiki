@@ -73,7 +73,8 @@ Every experiment SHOULD include cross-validation when tftable API is available:
 | 1 | ✅ | vex-cross-comp-items (2026-04-21) | Filter is foundation; same unit different comp = different BIS; Giant Slayer flips sign between NOVA and Dark Star |
 | 2 | ✅ | vex-nova95 (2026-04-21) | Necessity best single metric; Edge ≡ AVP; shrinkage doesn't fix bias |
 | 3 | 🧪 | vex-nova95 supplementary | Control variable + consistency check validated |
-| 4-9 | ⬜ | — | — |
+| 4 | ⬜ | — | — |
+| 5 | 🧪 | nova-trait-breakpoint (2026-04-22) | Universal improvement = bias; trait breakpoint ≈ different comp; "every unit improves" test as bias detector |
 
 ---
 
@@ -83,7 +84,9 @@ Every experiment SHOULD include cross-validation when tftable API is available:
 1. ~~**Module 1 preview**: Vex items in two different comps~~ → ✅ `vex-cross-comp-items` (2026-04-21)
 2. **Module 3 follow-up**: In Nova 95, do the top builds by AVP actually suffer from survivorship bias? Compare build AVP ranking with build Necessity ranking.
 3. **Cross-validation**: Query tftable for Nova 95 Vex items. Compare tftable's necessity scores with our calculated Necessity. Do they match?
+4. **Module 5 follow-up**: Matched-pair analysis — 2 NOVA vs 5 NOVA boards with same core units, comparing flex slot AVP
+5. **Exploratory**: Do other traits show the same "universal improvement" bias pattern?
 
 ---
 
-*Last updated: 2026-04-21*
+*Last updated: 2026-04-22*

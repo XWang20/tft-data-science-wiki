@@ -55,6 +55,7 @@
 | [[experiments/reflections-2026-04-21]] | 2026-04-21 | What I learned: don't bring conclusions to data, shrinkage ≠ debiasing |
 | [[experiments/vex-cross-comp-items]] | 2026-04-21 | Vex BIS changes across comps; filter = foundation validated |
 | [[experiments/cross-validation-vex-nova95]] | 2026-04-21 | Blocked on tftable API; pending |
+| [[experiments/nova-trait-breakpoint]] | 2026-04-22 | Is 5 NOVA worth it? Universal improvement = bias signal; trait breakpoint ≈ different comp |
 
 ## People
 
