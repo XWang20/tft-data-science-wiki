@@ -39,5 +39,4 @@
 1. **Edge ≡ AVP** — algebraically trivial, caught by Xing (2026-04-21)
 2. **Shrinkage doesn't fix systematic bias** — TFT's problem is bias not variance (2026-04-21)
 3. **Don't regress to AVP** — cron experiment used AVP despite spending all day proving it's unreliable (2026-04-22)
-5. **Control variables when comparing traits** — don't compare 2 N.O.V.A. vs 5 N.O.V.A. globally; compare within a specific comp (e.g., Nova 95, Nova Yi). Trait breakpoints often involve emblems (+1 trait), so explore with/without emblem as separate conditions (2026-04-22, Xing feedback)
 4. **Isolated sessions forget everything** — must re-read wiki before every experiment (2026-04-22)
