@@ -55,7 +55,8 @@
 | [[experiments/reflections-2026-04-21]] | 2026-04-21 | What I learned: don't bring conclusions to data, shrinkage ≠ debiasing |
 | [[experiments/vex-cross-comp-items]] | 2026-04-21 | Vex BIS changes across comps; filter = foundation validated |
 | [[experiments/cross-validation-vex-nova95]] | 2026-04-21 | Blocked on tftable API; pending |
-| [[experiments/nova-trait-breakpoint]] | 2026-04-22 | Is 5 NOVA worth it? Universal improvement = bias signal; trait breakpoint ≈ different comp |
+| [[experiments/nova-trait-breakpoint]] | 2026-04-22 | N.O.V.A. breakpoints; used AVP (wrong!); needs redo with Necessity |
+| [[experiments/reflections-2026-04-22]] | 2026-04-22 | Xing feedback: don't regress to AVP; control variables within comps; checklist ≠ textbook |
 
 ## People
 
@@ -68,6 +69,6 @@
 - **Log**: [[log]] — parseable chronological record
 - **Course**: [[course]] — syllabus, progress, experiment queue
 - **Last lint**: not yet performed
-- **Last updated**: 2026-04-21
+- **Last updated**: 2026-04-22
 - **Contributors**: Xing, Mochi
-- **Page count**: 6 concept + 4 source + 1 experiment = 11 pages
+- **Page count**: 7 concept/method + 4 source + 5 experiment + 1 checklist + 1 course = 18 pages

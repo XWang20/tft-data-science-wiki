@@ -1,20 +1,17 @@
 
 
-## [2026-04-21] update | Wiki references fixed
-- Fixed all broken wikilinks (short refs → full path refs with folder prefix)
-- All `[[biases]]` → `[[concepts/biases]]`, `[[filter-strategy]]` → `[[methods/filter-strategy]]`, etc.
+## [2026-04-22] experiment | N.O.V.A. Trait Breakpoints (cron)
+- First cron-triggered experiment
+- Compared 2 vs 5 N.O.V.A. using AVP (wrong metric!)
+- Xing feedback: use Necessity, control variables within specific comps, consider emblem factor
 
-## [2026-04-21] experiment | Vex Nova 95 — full rewrite
-- Rewrote report: 5 chapters (Raw AVP, Delta, Necessity, Edge, Builds) + 2 supplementary
-- Added Frequency-AVP regression (R² ≈ 0, regression not useful in filtered data)
-- Added Bayesian Shrinkage comparison (doesn't change rankings — bias not variance)
-- Added metric landscape chart (contour lines for all metrics)
-- Key finding: Necessity and Build Analysis converge; Edge ≡ AVP
-- Question changed from "best item" to "top 5 items"
+## [2026-04-22] reflection | Xing feedback on cron experiment
+- Regressed to AVP despite yesterday's lessons
+- Added lab-checklist.md as preflight
+- Learned: checklist = gate (10 items), not textbook
 
-## [2026-04-21] reflection | Day 1 learnings
-- Don't bring conclusions to data (confirmation bias)
-- Edge ≡ AVP is algebraically trivial — should have seen from math
-- Shrinkage doesn't fix systematic bias
-- Different metrics answer different questions
-- Wiki as learning journal + textbook
+## [2026-04-22] update | Wiki maintenance
+- Added lab-checklist.md
+- Added reflections-2026-04-22.md with Xing's full feedback
+- Updated index, course, cron job messages
+- Metrics page fully rewritten (Edge deprecated)
