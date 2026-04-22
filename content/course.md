@@ -80,11 +80,11 @@ Every experiment SHOULD include cross-validation when tftable API is available:
 
 ## Experiment Queue
 
-### Next experiments:
-1. ~~**Module 1 preview**: Vex items in two different comps~~ → ✅ `vex-cross-comp-items` (2026-04-21)
-2. **Module 3 follow-up**: In Nova 95, do the top builds by AVP actually suffer from survivorship bias? Compare build AVP ranking with build Necessity ranking.
-3. **Cross-validation**: Query tftable for Nova 95 Vex items. Compare tftable's necessity scores with our calculated Necessity. Do they match?
-4. **Module 5 follow-up**: Matched-pair analysis — 2 NOVA vs 5 NOVA boards with same core units, comparing flex slot AVP
+### Next experiments (priority: respond to Xing's feedback first):
+1. **Module 5 redo**: N.O.V.A. trait breakpoints within specific comps (Nova 95, Nova Yi), with/without emblem. Use Necessity not AVP. Apply causal inference. (Xing feedback 2026-04-22)
+2. **Open questions**: Can we measure filter reliability? How does causal inference framework apply to TFT?
+3. **Module 1 practice**: Study compositions.py filter patterns — document what expert-written filters look like
+4. **Module 3 follow-up**: Build AVP ranking vs Build Necessity ranking — do they differ?
 5. **Exploratory**: Do other traits show the same "universal improvement" bias pattern?
 
 ---
